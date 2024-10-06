@@ -67,5 +67,42 @@ Add the token in backend/src/controllers/contributorsController.js:
 ```
 'Authorization': `token REPLACE_WITH_YOUR_GITHUB_PERSONAL_ACCESS_TOKEN`
 ```
+---
+### 4. Running the Application
+
+### Backend:
+Navigate to the backend folder and run the server:
+```
+cd backend
+node server.js
+```
+
+This starts the backend at http://localhost:5000.
+
+### Frontend:
+
+Open a new terminal, navigate to the frontend folder, and run the development server:
+
+```
+cd frontend
+npm start
+```
+
+The app will run on http://localhost:3000.
 
 ---
+
+### Code Overview
+
+### Frontend :
+
+- **App.js**: This is the main component where the contributor data is fetched from the backend. It contains the infinite scroll functionality and renders the contributors list.
+- **components/ContributorCard.js**: A reusable component that displays individual contributor details such as avatar, username, and the contribution count.
+- **useInfiniteScroll.js:** Custom hook that handles the infinite scrolling logic by observing when the user reaches the bottom of the page.
+
+### Frontend :
+
+- **server.js**: The entry point for the backend. It starts the server on http://localhost:5000.
+- **app.js**: Configures the Express application, sets up middleware, and registers routes.
+- **routes/contributors.js**: Defines the /api/contributors endpoint, which calls the controller to fetch contributors.
+- **controllers/contributorsController.js**: Handles the logic for fetching data from the GitHub API. It uses Axios to make the API request and sends the response to the frontend.
