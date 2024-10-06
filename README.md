@@ -57,3 +57,8 @@ npm i or npm install
 
 ### 3. Setting Up GitHub API Token
 To avoid hitting the GitHub API rate limit, you need to generate a GitHub Personal Access Token:
+-Go to GitHub Tokens.
+-Click "Generate new token".
+-Name the token and select the public_repo permission.
+-Copy the token.
+Add the token in backend/src/controllers/contributorsController.js:
