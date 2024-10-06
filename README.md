@@ -36,16 +36,24 @@ This project is a **GitHub Repository Contributors Explorer** built using the **
 - Node.js installed on your system.
 
 ### 1. Clone the Repository
-'''
+```
 git clone https://github.com/your-username/github-contributors-explorer.git
 cd github-contributors-explorer
-'''
+```
+
 
 
 ### 2. Install Dependencies
 # Frontend :
+```
 cd frontend
 npm i or npm install
+```
 # Backend :
+```
 cd backend
 npm i or npm install
+```
+
+### 3. Setting Up GitHub API Token
+To avoid hitting the GitHub API rate limit, you need to generate a GitHub Personal Access Token:
