@@ -7,7 +7,10 @@ const getContributors = async (req, res) => {
   try {
     const response = await axios.get(`https://api.github.com/repos/supabase/supabase/contributors`, {
       params: { per_page, page },
-      headers: { 'User-Agent': 'request' },
+      headers: { 
+        'User-Agent': 'request' ,
+        'Authorization': `token REPLACE_WITH_YOUR_GITHUB_PERSONAL_ACCESS_TOKEN`
+    },
     });
 
     res.status(200).json(response.data);
