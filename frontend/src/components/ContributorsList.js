@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ContributorCard from './ContributorCard';
 import Loader from './Loader';
-import './ContributorsList.css';
+import '../styles/ContributorsList.css';
 import axios from 'axios';
 
 const ContributorsList = () => {

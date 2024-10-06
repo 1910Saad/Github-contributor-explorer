@@ -1,5 +1,5 @@
 import React from 'react';
-import './ContributorCard.css';
+import '../styles/ContributorCard.css';
 
 const ContributorCard = ({ avatar_url, login, contributions }) => {
   return (
