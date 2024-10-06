@@ -44,12 +44,12 @@ cd github-contributors-explorer
 
 
 ### 2. Install Dependencies
-# Frontend :
+### Frontend :
 ```
 cd frontend
 npm i or npm install
 ```
-# Backend :
+### Backend :
 ```
 cd backend
 npm i or npm install
