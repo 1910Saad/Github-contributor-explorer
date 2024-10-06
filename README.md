@@ -65,7 +65,7 @@ To avoid hitting the GitHub API rate limit, you need to generate a GitHub Person
   
 Add the token in backend/src/controllers/contributorsController.js:
 ```
-'Authorization': `token YOUR_GITHUB_PERSONAL_ACCESS_TOKEN`
+'Authorization': `token REPLACE_WITH_YOUR_GITHUB_PERSONAL_ACCESS_TOKEN`
 ```
 
 ---
